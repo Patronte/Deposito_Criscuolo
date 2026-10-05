@@ -8,7 +8,7 @@
 # i tipi non basilari/non primitivi  li creiamo noi, sono praticamente solo gli oggetti
 #primi tipi di variabili basilari sono
 # i numeri interi (int) e quelli con la virgola, a cui sono applicabili le operazioni aritmetiche comuni, sugli altri tipi di numeri no
-#Numeri con la virgola,  (float) possono essere positivi e negativi, no operazioni aritmetiche
+#Numeri con la virgola,  (float) possono essere positivi e negativi, no operazioni aritmetiche, sono col punto non con la virgola
 #(Stringhe) le stringhe sono contenute da virgolette, sono basilari ma speciali perché contengono più valori e hanno metodi proprietari, ogni lettera è un CHAR 
 
 
@@ -24,3 +24,4 @@ nome = "Patronte"
 messaggio = saluto + " " + nome
 print(messaggio)
 input(print("Cosa vuoi sapere?"))
+
