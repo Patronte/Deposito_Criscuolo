@@ -2,7 +2,8 @@
 
 #Creare una serie di condizioni una dentro l'altra che a fronte di un umput per ogni if decidano se farti passare o no( 3 livelli, fate un paragone con ==)
 #Andare a creare un if con vari elif e un else finale che gestisca un menu per la selezione di un crud basilare  append remove modifica
-#Primo Esercizio IF ANNIDATO
+'''
+#Esercizio 1  IF ANNIDATO
 passwordUtente = input("Inserisci una password a caso ")
 
 passwordCorretta = "Password123"
@@ -25,7 +26,7 @@ if passwordUtente != passwordCorretta:
         
             print("Inserisci una password nel campo richiesto")
 
-#Esercizio 2 tramite le liste, aggiungi, rimuovi, modifica
+#Esercizio 2, errato/incompleto  tramite le liste, aggiungi, rimuovi, modifica
 stanzeOccupate= [12,40,27,86,50]
 if stanzeOccupate >= 5 :
     print("L'albergo è pieno")
@@ -36,8 +37,8 @@ elif stanzeOccupate != 0:
 else : 
     print("Non ci sono stante disponibili")
     
-# quello di sopra not so much, ecco come l'ha fatto Mirko
-# dati
+# Esercizio 2 tipo 2 (svolto da prof Mirko)
+#dati
 lista = [1,2,3]
 scelta = input("cosa vuoi fare? aggiungi, rimuovi, modifica ")
 
@@ -62,3 +63,24 @@ elif scelta == "modifica":
 else: 
     
     print("Scelta sbagliata")
+    
+    '''
+    #Esercizio 2 tipo 3 (svolto da me)
+    
+lista1 = ["Tizio","Caio","Sempronio","Genovebba","Moretti","Mirko", "Caparezza"]
+lista2 = [1,2,3,4,5,6,7]
+scelta = input("Quale lista vuoi confrontare? lista1 o lista2? ")
+if scelta == "lista1" :
+    print(lista1)
+    
+    if scelta == "lista1" :
+        input(modifica)
+    elif modifica == "aggiungi":
+        input("Scegli cosa aggiungere")
+        lista1.append(lista1)
+        
+elif scelta == "lista2":
+    print(lista2)
+else : 
+    print("Scelta errata, riprova")
+    

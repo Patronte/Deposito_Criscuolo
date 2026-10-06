@@ -11,7 +11,7 @@ print ("Ciao, " + nome + "! Benvenuto in Python")
 print ("La tua eta moltiplicata per 2 è: ")
 print(eta*2)
 
-
+#conversioni verso float int e bull
 # l'hashtag si usa per scrivere una riga di commento mentre
 ''' triplo apice è un commento a riga multipla, serve per selezionare 
 parte di codice da non lanciare ad esecuzione'''

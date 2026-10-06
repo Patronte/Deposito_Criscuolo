@@ -5,7 +5,7 @@ definizione
 ordinamento ordinato
 elementi eterogenei
 si definiscono tramite parentesi quadre 
-
+'''
 #creo collezioni
 listaNum = [1,2,3,4,5,10]
 listaNom = ["Peppe", "Mirko", "Muciaccia", "Andonio"]
@@ -16,7 +16,7 @@ print(listaNom[0])
 listaNum[2] = 500
 #stampo la lista che è stata modificata grazie alla riga 16
 print(listaNum)
-'''
+
 #Utilizziamo i metodi, len, append, insert, remove, sort 
 
 listaNum = [15,2,25,4,5,10]
