@@ -37,20 +37,28 @@ else :
     print("Non ci sono stante disponibili")
     
 # quello di sopra not so much, ecco come l'ha fatto Mirko
+# dati
+lista = [1,2,3]
+scelta = input("cosa vuoi fare? aggiungi, rimuovi, modifica ")
 
-lista = [1,2,3,]
-scelta = input("Cosa vuoi fare? aggiungi, rimuovi, modifica")
-
-if scelta == "aggiungi" : 
-   scelta2 = input("scegli la parola")
-   lista.append(scelta2)
-   
-   print(lista)
+if scelta == "aggiungi" :
+    scelta2 = input("scegli una parola")
+    lista.append(scelta2)
+    
+    print(lista)
+elif scelta == "rimuovi":
+    print("scegli cosa rimuovere fra: ", lista)
+    scelta2 = int(input("scegli il numero "))
+    lista.remove(scelta2)
+    
+    print(lista)  
 elif scelta == "modifica":
-    print("Scegli quale posizione modificare da 0 con limite a", len(lista)-1)
-   scelta2 = int(input("Scegli il numero"))
-   lista.remove(scelta2)
-   
-   print(lista)
-elif scelta == "modifica":
-    print("scegli quale posizione modificare da 0 con limite a", len(lista)) 
+    print("scegli quale posizione modificare da 0 con limite a", len(lista)-1 )
+    scelta2 = int(input("scegli una posizione"))
+    scelta3 = input("scegli una parola da aggiungere")
+    lista[scelta2] = scelta3
+    
+    print(lista)   
+else: 
+    
+    print("Scelta sbagliata")
