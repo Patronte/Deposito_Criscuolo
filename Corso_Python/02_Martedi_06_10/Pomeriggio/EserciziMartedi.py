@@ -35,7 +35,8 @@ else :
 # Se la scelta non corrisponde a nessuna delle tre, stampa un messaggio di errore.
 # Dopo ogni operazione, stampa la lista aggiornata.
 
-#Nota Esercizio già svolto letto alla veloce prima di procedere
+#Nota Esercizio già svolto letto alla veloce prima di procedere 
+'''
 lista = [1,2,3,4,5]
 scelta = input("Che operazione vuoi fare? aggiungere, rimuovere o modifica ")
 
@@ -74,15 +75,81 @@ elif scelta.upper() == "MODIFICA" :
 else :
    
     print("Scelta errata, riprovare ")
-#Nota ESERCIZIO 2 è stato no scristo, la modifica, non sapevo come fa er len(lista)-1) e non sapevo come fa la modifica del valore in base alla posizione
+'''
+#Nota ESERCIZIO 2 è stato no scristo,  -->  len(lista)-1)  e la modifica non sapevo come farla, né la modifica del valore in base alla posizione
+#NOTA mi son guardato l'esercizio svolto per risolvere questi 2 intoppi
+
 # Esercizio 3 — Maggiore età con match-case
 # Chiedi l'età. Verifica se è maggiore o uguale a 18 (valore booleano). Trasforma quel risultato in una stringa ("maggiorenne" o "minorenne").
 # Usa un costrutto match-case su quella stringa per stampare se può vedere il film oppure no.
+'''
+eta = int(input("Quanti anni hai? "))
+
+if eta >= 18: 
+    
+    eta = "MAGGIORENNE"
+
+elif eta < 18 and eta > 0: 
+
+    eta = "MINORENNE"
+
+else :
+    print("Riprova, e scrivi la tua eta. ") 
+
+    
+match eta:
+    
+    case "MAGGIORENNE":
+    
+        print("Sei maggiorenne, goditi il film. ")
+    
+    case "MINORENNE":
+    
+        print("Sei minorenne, non te poi vede er film. ")
+    
+    case _:
+    
+        print("Anno di nascita non confermato, verifica la tua eta. ")
+'''
+#ESERCIZIO 3 NOTAE, ci ho molto più di quanto avrei dovuto, mi son rivisto il mio esempio di match e case fatto in Condizioni2.py per sbloccarmi la memoria
+
 
 # Esercizio 4 — Calcolatrice con match-case
 # Chiedi due numeri e un'operazione (addizione, sottrazione, moltiplicazione, divisione). Usa match-case per eseguire l'operazione giusta e stampare il risultato.
 # Per la divisione, controlla prima se il secondo numero è zero: in quel caso stampa un messaggio invece di dividere.
 
+operando1 = int(input("Seleziona il primo numero "))
+operando2 = int(input("Seleziona il secondo numero "))
+operazione = input("Seleziona il tipo di operazione: addizione +  sottrazione - moltiplicazione *  divisione / ")
+operazione = operazione.lower()
+match operazione:
+    case "addizione":
+        print(operando1+operando2)
+    case "+" :  
+        print(operando1+operando2)
+    case "sottrazione":
+        print(operando1-operando2)
+    case "-":
+        print(operando1-operando2)
+    case "moltiplicazione":
+        print(operando1*operando2)
+    case "*":
+        print(operando1*operando2)
+    case"divisione" :
+        if operando2 == 0 :
+            print("MA CHE STAI A FA NUN SE PO DIVIDE PE ZERO AO")
+
+    case"/" :
+        if operando2 == 0 :
+            print("MA CHE STAI A FA NUN SE PO DIVIDE PE ZERO AO")
+        else: print(operando1/operando2)
+    case "divisione":
+        print(operando1/operando2)
+    case "/":
+        print(operando1/operando2)
+
+#NOTEES4 dai Mirko ma che evoluzione qua, messo il .lower  alla singola variabile operazione  invece che ad ogni case come prima, e t'ho fatto pure sia testo che simbolo per l'operazione  
+#poi però è venuto fuori l'if e la ho risolto a modo mio, però sento che avrei dovuto cancellare qualcosa, tipo una coppia di divisione senza l'if, non so se quell'else che ho messo, si applica a tutti e 2 gli if o no, e nsomma...       
 # Esercizio 5 — Due liste, scelta per tipo
 # Crea due liste: una di numeri, una di parole. Chiedi all'utente se vuole lavorare con le stringhe (S) o con i numeri (N). In entrambi i casi, 
 # chiedi poi se vuole aggiungere o rimuovere un elemento, e agisci sulla lista corrispondente (stringhe o numeri). Gestisci anche il caso in cui
