@@ -15,13 +15,15 @@
 nomeVariabile = "valore" 
 
  #assegna variabile A e stampane i caratteri (si parte a contare da 0)
-a = "Magicka"
+'''a = "Magicka"
 print(a[5])
-print(a[6]) 
+print(a[6]) '''
 # concatenare le stringhe col + 
 saluto = "Ciao"
 nome = "Patronte"
 messaggio = saluto + " " + nome
 print(messaggio)
-input(print("Cosa vuoi sapere?"))
+domanda = input("Io sono una super intelligenza artificiale, cosa vuoi sapere? ")
+
+print("Non ne ho idea")
 
