@@ -35,7 +35,6 @@ else :
 # Se la scelta non corrisponde a nessuna delle tre, stampa un messaggio di errore.
 # Dopo ogni operazione, stampa la lista aggiornata.
 
-#Nota Esercizio già svolto letto alla veloce prima di procedere 
 '''
 lista = [1,2,3,4,5]
 scelta = input("Che operazione vuoi fare? aggiungere, rimuovere o modifica ")
@@ -76,6 +75,7 @@ else :
    
     print("Scelta errata, riprovare ")
 '''
+#Nota ho letto l'esercizio già svolto alla veloce, prima di procedere 
 #Nota ESERCIZIO 2 è stato no scristo,  -->  len(lista)-1)  e la modifica non sapevo come farla, né la modifica del valore in base alla posizione
 #NOTA mi son guardato l'esercizio svolto per risolvere questi 2 intoppi
 
@@ -117,24 +117,32 @@ match eta:
 # Esercizio 4 — Calcolatrice con match-case
 # Chiedi due numeri e un'operazione (addizione, sottrazione, moltiplicazione, divisione). Usa match-case per eseguire l'operazione giusta e stampare il risultato.
 # Per la divisione, controlla prima se il secondo numero è zero: in quel caso stampa un messaggio invece di dividere.
-
+'''
 operando1 = int(input("Seleziona il primo numero "))
 operando2 = int(input("Seleziona il secondo numero "))
 operazione = input("Seleziona il tipo di operazione: addizione +  sottrazione - moltiplicazione *  divisione / ")
 operazione = operazione.lower()
+
 match operazione:
+
     case "addizione":
         print(operando1+operando2)
+    
     case "+" :  
         print(operando1+operando2)
+   
     case "sottrazione":
         print(operando1-operando2)
+   
     case "-":
         print(operando1-operando2)
+  
     case "moltiplicazione":
         print(operando1*operando2)
+  
     case "*":
         print(operando1*operando2)
+  
     case"divisione" :
         if operando2 == 0 :
             print("MA CHE STAI A FA NUN SE PO DIVIDE PE ZERO AO")
@@ -142,15 +150,76 @@ match operazione:
     case"/" :
         if operando2 == 0 :
             print("MA CHE STAI A FA NUN SE PO DIVIDE PE ZERO AO")
+        
         else: print(operando1/operando2)
+    
     case "divisione":
         print(operando1/operando2)
+    
     case "/":
         print(operando1/operando2)
 
+'''
 #NOTEES4 dai Mirko ma che evoluzione qua, messo il .lower  alla singola variabile operazione  invece che ad ogni case come prima, e t'ho fatto pure sia testo che simbolo per l'operazione  
 #poi però è venuto fuori l'if e la ho risolto a modo mio, però sento che avrei dovuto cancellare qualcosa, tipo una coppia di divisione senza l'if, non so se quell'else che ho messo, si applica a tutti e 2 gli if o no, e nsomma...       
+
+
 # Esercizio 5 — Due liste, scelta per tipo
 # Crea due liste: una di numeri, una di parole. Chiedi all'utente se vuole lavorare con le stringhe (S) o con i numeri (N). In entrambi i casi, 
 # chiedi poi se vuole aggiungere o rimuovere un elemento, e agisci sulla lista corrispondente (stringhe o numeri). Gestisci anche il caso in cui
 # la prima scelta non sia né S né N. Stampa la lista aggiornata dopo ogni operazione.
+
+n = [1,2,3,4,5,6]
+s = ["Peppe","Peppino","Peppeniello","Peppuccio","Pe","Peppone"]
+scelta1 = input("Vuoi lavorare con le stringhe(S) o con i numeri(N)? ")
+scelta1 = scelta1.lower()
+
+if scelta1 == "n": 
+    
+    print(n)
+    print("Operazione eseguibili: aggiungere(A) o rimuovere(R) un elemento, cosa vuoi fare? ")
+    
+    scelta2= input()
+    scelta2 = scelta2.lower()
+    
+    if  scelta2 == "a":
+        scelta3 = int(input("Che numero vuoi aggiungere? "))
+        n.append(scelta3)
+        print(n)   
+        
+    elif scelta2 == "r":
+        print(n)
+        scelta3 = int(input("Che numero vuoi rimuovere? "))
+        n.remove(scelta3)
+        print(n)
+        
+    else : 
+        print("è sorto un errore si prega di riprovare")
+        
+               
+elif scelta1 =="s" :
+  
+    print(s)
+    print("Operazione eseguibili: aggiungere(A) o rimuovere(R) un elemento, cosa vuoi fare? ")
+    
+    scelta2= input()
+    scelta2 = scelta2.lower()
+  
+    if  scelta2 == "a":
+        scelta3 = (input("Che nome vuoi aggiungere? "))
+        s.append(scelta3)
+        print(s)   
+    
+    elif scelta2 == "r":
+        print(s)
+        scelta3 = (input("Che nome vuoi rimuovere? "))
+        s.remove(scelta3)
+        print(s)
+        
+    else : 
+        print("è sorto un errore si prega di riprovare")
+else:
+    print("Errore inaspettato si prega di riprovare")
+    
+#NOTES ES5 qui ci ho fatto proprio a botte, ma ho vinto io, sicuramente mi sarei facilitato la vita con il match case, ma penso che proverò a rifare l'esercizio appunto utilizzandolo
+#UNA PROSSIMA VOLTA 
