@@ -60,3 +60,15 @@ for i in range (0,5):
 #range start stop and step (conterà da 0 a 10, lo stop a 10 arriverà a conteggiare fino ad 8 in quanto non tiene conto dell'ultima posizione 
 for i in range(0,10,2):
     print(i)
+    
+#operatore * altresì noto come SPLAT serve a creare le liste
+lista = [*range(10)] #ho spalmato il range di 10 dentro una lista
+lista2 = [*range(1,10,2)] #creo una lista da 10 andando avanti di due in due
+print(lista)
+print(lista2)
+#se voglio far dare all'utente l'input di start step e stop li chiedo prima e poi li splatto nella lista
+scelta1 = int(input("Inserisci lo start "))
+scelta2 = int(input("Inserisci lo stop "))
+scelta3 = int(input("Inserisci lo step "))
+lista3= [*range(scelta1, scelta2, scelta3)]
+print(lista3)
