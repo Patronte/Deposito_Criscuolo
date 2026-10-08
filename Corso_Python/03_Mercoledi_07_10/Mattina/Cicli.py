@@ -72,3 +72,7 @@ scelta2 = int(input("Inserisci lo stop "))
 scelta3 = int(input("Inserisci lo step "))
 lista3= [*range(scelta1, scelta2, scelta3)]
 print(lista3)
+
+
+#PASS CONTINUE AND BREAK 
+il pass si usa quando non si vuole eseguire un'azione all'interno di un ciclo, fa da segnaposto

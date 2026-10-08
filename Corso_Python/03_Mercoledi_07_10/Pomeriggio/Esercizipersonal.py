@@ -23,6 +23,7 @@
 #TIPI DI DATI) principalmente sono due, primitivi e non primitivi
 #DATI PRIMITIVI) sono quelli nativi del linguaggio di programmazione, NUMERI (interi e decimali) 
 #STRINGHE(contenitori di seguenze di caratteri) CHAR (singolo carattere),BOOL i classici True and False (case sensitive)
+#LE STRINGHE SONO SPECIALI PERCHE' COMPOSTE DA SINGOLI ELEMENTI E PERCHE' HANNO I METODI UNICI (len(stringa)) (stringa.upper())/lower/split
 #COLLEZIONI IN PYTHON 
 #LE LISTE tipo di dato list): una lista è una collezione ordinata e modificabile di elementi, questi possono essere di vari tipi, come interi, stringhe, booleani  anche altre liste e tipi di dati misti. 
 # Lista=[] crea una lista vuota lista=[1,2,3,4] lista numerica, lista=[Peppe, 12, true, 4.5] una lista mista, e così via
@@ -34,3 +35,8 @@
 # 3) lista.insert(2, 10) il 2 in parentesi è l'indice di dove deve essere sostituito, e 10 il valore con cui sostituirlo
 # 4) lista.remove(elementodarimuovere) rimuoverà l'elemento in lista che corrisponde a ciò che hai scritto in parentesi
 # 5) lista.sort() per ordinare gli elementi della lista 
+
+
+Patro = ["Jesus","Joacchin","Paperin","Mirkettin","Ballerin","Andonio","Ernesto","Liste","Valori"]
+Patro.sort()
+print(Patro)
