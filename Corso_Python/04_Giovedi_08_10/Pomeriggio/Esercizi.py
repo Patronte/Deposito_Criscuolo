@@ -34,7 +34,7 @@ for n in range(richiestaN+1):
   #Qui ho sfruttato il for precedente, visto che pensavo fosse corretto, ora dubito ancora della questione lista visto che dubito di averne stampate 
     
 #ciclo for 
-  for n in range(richiestaN+1):
+for n in range(richiestaN+1):
     #se è pari, aggiungi ad n, n stesso, e poi stampamelo, non credo rispetti comunque la richiesta 
         if n % 2==0:
             n=n+n
