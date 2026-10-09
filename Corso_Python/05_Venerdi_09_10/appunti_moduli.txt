@@ -1,0 +1,4 @@
+In Python un modulo è un file che contiene definizioni di variabili, funzioni e classi che possono funzionare in altri file tramite import
+Il comando base per far funzionare un modulo è "import" senza virgolette
+IMPORT è una logica che serve a dire all'interno di questo file noi possiamo inserire qualcos'altro
+lo useremo per librerie file, file esterni
