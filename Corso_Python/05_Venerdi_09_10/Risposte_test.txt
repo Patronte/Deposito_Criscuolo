@@ -1,0 +1,38 @@
+1)
+Matteo, Criscuolo, matteocriscuolo99@gmail.com
+2)
+Python è un linguaggio di programmazione:
+-interpretato: significa che il codice che andiamo a scrivere viene prima tradotto e interpretato dalla macchina e poi eseguito, c
+-ad alto livello: Si intende che il linguaggio che utilizziamo per scrivere codice è più vicino al linguaggio umano piuttosto che al linguaggio macchina, a differenza di altri linguaggi di programmazione.
+-orientato agli oggetti:  python è orientato agli oggetti, la maggior parte di ciò che lo compone è appunto un oggetto, come le variabili, le funzioni...
+-dinamico: Python è definito come un linguaggio fortemente tipizzato o dalla tipizzazione forte ciò implica che alla stessa variabile può essere assegnato  più di un singolo tipo, e che si può passare da un tipo all'altro (es. x=5, x="Mirko" qui assegniamo ad x prima un int, e poi una string) , ma non si può avere una variabile che non abbia un tipo.
+3) 
+Una variabile è un contenitore di valori, che assume la tipologia che le assegniamo, I Macro tipi sono primitivo e non primitivo, le variabili primitive sono quelle native del linguaggio di programmazione, 
+prendi ad esempio : i numeri interi(int) , i decimali (float) le stringhe (str) i caratteri(char), i booleani(bool). le stringe sono speciali in quanto permettono di utilizzare anche caratteri speciali, ed hanno i metodi, i metodi, sono per esempio .len che ci permette di ottenere la lunghezza della stringa di riferimento
+mentre le non primitive, sono invece quelle inizializzate dall'utente durante la  scrittura del codice
+per scrivere una variabile si procede in questo modo, prendiamo in esempio la variabile x = 5
+abbiamo scelto un nome per la nostra variabile (x) le abbiamo poi attribuito un valore (un int in questo caso) attraverso il simbolo dell' =  
+
+4)Cos'è il controllo del flusso? quali famiglie lo compongono? spiegale
+
+il controllo del flusso ci serve ad iterare una o più condizioni, per una o più volte,
+a seconda dell'esigenza, del numero di ripetizioni da eseguire,
+in base al fatto che le ripetizioni da eseguire siano determinate o indeterminate ed a seconda che l'elemento in questione cambi o meno durante le ripetizioni del ciclo/i
+gli esempi principali di controllori del flusso, sono l'IF elif else, il while, il for, ed il match case
+
+5)Cos'è una funzione? di che tipi ne abbiamo? spiegale
+Una funzione, è un blocco di codice, all'interno del quale, assegniamo un nome alla funzione, e delle istruzioni.
+    le funzioni, servono a non scrivere a mano ogni volta una porzione di codice,
+un classico esempio che si può fare è una funzione per fare una somma,
+def somma (a, b) :
+    return a+b
+
+print(somma(1,12))
+per creare una funzione utilizzeremo il comando def, seguito dal nome della funzione(somma), aperte le parentesi, all'interno inseriremo i parametri(a,b) sono i nostri addendi dato il contesto
+il return a+b ci permette di consegnare il risultato della funzione, dove richiesto, il print esterno alla funzione, mi permette di richiamare la funzione stessa, ovvero, print(somma) e l'altra parentesi (1,12) sono gli argomenti che in questo momento sto chiedendo di utilizzare nella funzione stessa
+    
+6)
+Github è un sistema di versionamento.
+Il versionamento serve a salvare dello stesso file, varie versioni, in base alle modifiche effettuate su di esso,  git desktop come github ci permette di versionare, 
+la versione desktop funziona anche in locale, git stesso ci permette inoltre di condividere i file creati, quindi anche di collaborare a distanza. 
+per fare un esempio di versionamento possiamo fare riferimento ad un gioco che ha i salvataggi, ognuno di quei salvataggi equivale ad una versione di un file salvato su git
