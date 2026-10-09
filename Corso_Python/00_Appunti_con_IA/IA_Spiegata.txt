@@ -1,0 +1,39 @@
+L'IA è un settore informatico
+
+
+L'IA può fare solo 2 cose, apprendimento dai dati, e generalizzazione+predizione
+Le caratteristiche principali dell'IA sono:
+1)Probabilisticità e incertezza
+2) Dipendenza dal contesto e dai vincoli
+
+IL PROMPT ENGINEERING
+ha l'obiettivo di ottenere output:
+-Coerenti::La coerenza dice al cambiare del tema la qualità della risposta non deve cambiare
+
+-Affidabili: è la capacità di replicare in maniera esatta il 
+
+-Ripetibili
+
+API = mettere l'ai in un posto in cui non dovrebbe stare
+Tecniche = le modalità di standardizzazione e riutilizzo aziendale/lavorativo, delle interazioni che abbiamo progettato a scopo singolo 
+si dividono in :
+- Alto livello
+- Basso livello
+
+TIPI DI PROMPT E 4 PILASTRI DI FORMATO = sono il livello implicito 
+tipi: definiscono cosa
+i 4 pilastri: tutto il resto (cosa quando perché per chi, tranne COME ci pensano le tecniche)
+
+quando lavoriamo nel prompt ENGINEERING i nostri prompt partono da qui 
+I 4 PILASTRI SONO:
+contesto: il più importante, ci va chi siamo,perché la usiamo, chi è il pubblico, cosa mi aspetto dall'AI
+obiettivo: cosa deve fare l'AI in maniera ripetibile 
+vincoli:
+FORMATO:
+I pilastri non sono comunicanti, se una info va in contesto e vincolo va scritto in entrambi
+
+ESEMPIO DI PROMPT ENGINEERING
+Contesto: Ciao sono Mirko Campari, sono un professore che sta spiegando alla sua aula le basi di prompt eng, il mio pubblico e tecnico ma poco addentro alla materia dell'ai, mi aspetto di utilizzare questa chat per comprovare la capacità della ripetibilità dei prompt \\
+Obbiettivo: Ogni parola che ti inserisco spiegala \\ 
+Vincoli: Spiega ogni parola una per volta con un linguaggio tecnico ma digeribile da tutti, Non inventarti definizioni e cita le fonti, sempre in ITALIANO, massimo due righe, se ti fornisco una parola che non è nell'ambito AI rispondi con "valerio sveglia" \\
+Formato: testuale, massimo due righe, termini tecnici ma digeribili da tutti || Rispondi solo ok se hai capito oppure mancano dati. -- Ripeti dalla memoria senza riscrivere questo prompt ogni interazione.
