@@ -96,3 +96,5 @@ while x != "end":
     pass
 
 
+
+# puoi provare autonomamente es pag 140- 142 128-9

@@ -10,7 +10,8 @@
 #   4. Esempio completo: Automobile
 #   5. I tre tipi di metodi (istanza, classe, statico)
 #   6. Esempio di metodo di classe: Contatore
-#   7. Riepilogo finale
+#   7. I metodi speciali (dunder): __str__, __len__, __call__
+#   8. Riepilogo finale
 #
 # =============================================================================
 
@@ -177,7 +178,79 @@ Contatore.mostra_numero_istanze()   # Sono state create 2 istanze.
 
 
 # =============================================================================
-# 7. RIEPILOGO FINALE
+# 7. I METODI SPECIALI (DUNDER METHODS)
+# =============================================================================
+#
+# "Dunder" = "double underscore": sono i metodi con il nome tra doppi
+# underscore (__nome__). Sono i METODI SPECIALI di cui parlavamo sopra.
+#
+# Python li richiama AUTOMATICAMENTE quando usiamo certe funzioni o sintassi
+# (print, len, le parentesi tonde...). Noi li scriviamo per dire al sistema
+# COME deve comportarsi il nostro oggetto in quei casi.
+#
+# I più famosi:
+#   __init__  -> costruttore: costruisce (inizializza) gli oggetti
+#   __str__   -> "to string": decide cosa viene stampato con print(oggetto)
+#   __len__   -> decide cosa restituisce len(oggetto)
+#   __call__  -> permette di usare l'oggetto come se fosse una funzione
+#
+# Nota: __init__ e __str__ esistono già di default (ereditati da Python);
+# noi li ridefiniamo per personalizzarli. Altri, come __len__ e __call__,
+# funzionano solo se li scriviamo noi.
+
+
+# --- __str__: come si stampa l'oggetto ---------------------------------------
+# Senza __str__, print(oggetto) mostrerebbe qualcosa tipo
+# <__main__.Studente object at 0x...>
+
+class Studente:
+    def __init__(self, nome, eta):
+        self.nome = nome
+        self.eta = eta
+
+    def __str__(self):
+        # Deve RESTITUIRE una stringa (str(...) per convertire l'età)
+        return "Studente: " + self.nome + ", età: " + str(self.eta)
+
+
+studente1 = Studente("Luca", 20)
+print(studente1)   # Studente: Luca, età: 20
+
+
+# --- __len__: cosa restituisce len(oggetto) ----------------------------------
+# Serve a dire al sistema come comportarsi quando chiamiamo len() sull'oggetto.
+# Qui scegliamo noi cosa contare: il numero di giocatori.
+
+class Squadra:
+    def __init__(self, nome, giocatori):
+        self.nome = nome
+        self.giocatori = giocatori
+
+    def __len__(self):
+        return len(self.giocatori)
+
+
+squadra1 = Squadra("Tigri", ["Luca", "Marco", "Anna"])
+print(len(squadra1))   # 3
+
+
+# --- __call__: l'oggetto usato come una funzione -----------------------------
+# Permette di "chiamare" l'intero oggetto con le parentesi: oggetto(valore)
+
+class Moltiplicatore:
+    def __init__(self, numero):
+        self.numero = numero
+
+    def __call__(self, valore):
+        return valore * self.numero
+
+
+doppio = Moltiplicatore(2)
+print(doppio(10))   # 20
+
+
+# =============================================================================
+# 8. RIEPILOGO FINALE
 # =============================================================================
 #
 #   CLASSE   -> definizione/astrazione (il "progetto"), scritta una volta sola
@@ -185,6 +258,10 @@ Contatore.mostra_numero_istanze()   # Sono state create 2 istanze.
 #   __init__ -> costruttore: inizializza gli attributi dell'oggetto
 #   self     -> l'oggetto corrente (serve in tutti i metodi tranne gli statici)
 #   cls      -> la classe corrente (metodi di classe)
+#
+#   __str__  -> cosa mostra print(oggetto)
+#   __len__  -> cosa restituisce len(oggetto)
+#   __call__ -> permette di usare oggetto(...) come una funzione
 #
 #   Attributo di classe   -> condiviso da tutti (es. numero_di_ruote)
 #   Attributo di istanza  -> proprio di ogni oggetto (es. self.marca)

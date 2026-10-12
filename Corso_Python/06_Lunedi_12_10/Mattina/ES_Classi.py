@@ -102,3 +102,4 @@ while scelta != "end":
     scelta = input("vuoi continuare?")
 
 '''
+
