@@ -44,10 +44,10 @@ while True:
 
 '''
 
-
+'''
 #spiegazione
 #ho definito una classe 
-'''
+
 class punto:
     pass
 #sicuramente mi servirà un costruttore quindi faccio init dentro la classe
