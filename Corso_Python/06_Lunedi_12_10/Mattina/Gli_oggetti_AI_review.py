@@ -180,7 +180,7 @@ Contatore.mostra_numero_istanze()   # Sono state create 2 istanze.
 # =============================================================================
 # 7. I METODI SPECIALI (DUNDER METHODS)
 # =============================================================================
-#
+#SONO METODI CHE ESISTONO ANCHE SE NON LI DEFINIAMO PERCHè VENGONO EREDITATI DA UNA MACRO CLASSE OBJ
 # "Dunder" = "double underscore": sono i metodi con il nome tra doppi
 # underscore (__nome__). Sono i METODI SPECIALI di cui parlavamo sopra.
 #
@@ -202,6 +202,14 @@ Contatore.mostra_numero_istanze()   # Sono state create 2 istanze.
 # --- __str__: come si stampa l'oggetto ---------------------------------------
 # Senza __str__, print(oggetto) mostrerebbe qualcosa tipo
 # <__main__.Studente object at 0x...>
+
+#il metodo __repr__ serve ad avere un metodo (def repr) per andare a chiamare un return, che non sia per chi vede, ma per chi fa, a differenza di str che stampa un oggetto col print, qui utilizziamo repr anche per stamparlo
+
+#IL METODO __eq__ è un metodo a cui diciamo come deve comparare gli oggetti quando li mettiamo nell'== , se io voglio sapere se due oggetti sono uguali devo scrivere io in quale ordine deve 
+
+#IL METODO __getattribute__ ti riporta i singoli attributi dell'oggetto
+# se ti richiedono un attributo, rispondi usando questa logica
+# un esempio è quando ti chiedono la password prima di modificarla
 
 class Studente:
     def __init__(self, nome, eta):
