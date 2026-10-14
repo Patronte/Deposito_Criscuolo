@@ -7,7 +7,7 @@
 # ## 1. Definizione
 
 # **Concetto:** l'incapsulamento è la capacità di **nascondere i dettagli interni dell'implementazione** di una classe ed **esporre verso l'esterno solo ciò che è necessario**. Permette di decidere cosa si vede **fuori** e cosa si vede **dentro** la classe.
-
+#L'incapsulamento passivo è tutto l'incapsulamento che non gestiamo direttamente ma che ci troviamo a dover far funzionare
 # > Questa definizione chiarisce in parte la frase della lezione precedente ("nascondere nel codice o dal codice"): il nascondere riguarda la visibilità dentro e fuori dalla classe.
 
 # ---
@@ -73,7 +73,7 @@
 # | **Metodo privato** | `__metodo()` | Richiamabile solo dentro la classe (nei metodi pubblici) |
 # | **Attributo protetto** | `_nome` | Segnala "uso interno": per la classe e i suoi figli |
 # | **Getter e setter** | `get_...` / `set_...` | Leggono e modificano un attributo in modo controllato |
-
+# | **I getter e setter sono due metodi che servono a darti e richiamare un dato privato 
 # > **⚠️ Correzione:** gli attributi non sono metodi, quindi è meglio chiamarli **strumenti** o **meccanismi**.
 
 # ### 4.1 Attributi privati
@@ -233,3 +233,4 @@
 # - Le altre 3 delle "7 regole" dell'OOP e la definizione di astrazione, ancora da recuperare
 
 # Quando vuoi, incolla il prossimo blocco.
+

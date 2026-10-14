@@ -15,7 +15,6 @@
 # - **variabili** (attributi)
 # - **metodi**, cioè funzioni associate alla classe
 # - **metodi speciali**, come il costruttore
-
 # Il **nome della classe** ha tre funzioni: dà il nome alla classe, è il nome del costruttore e indica il tipo degli oggetti che crea. Gli appunti la definiscono anche "l'astrazione del mondo reale", collegandola all'OOP della prima lezione.
 
 # > **⚠️ Precisazioni:**
@@ -61,6 +60,7 @@
 # ## 3. Il costruttore `__init__` e `self`
 
 # **Concetto:** il costruttore è il metodo che prepara un oggetto appena creato. Fuori dalla classe lo richiami con il **nome della classe** (`Mirko()`), dentro la classe si scrive come `__init__` (da *inizializzazione*). Può ricevere dei parametri.
+# IL SELF è sempre obbligatorio come primo parametro e  RAPPRESENTA L'OGGETTO
 
 # **Sintassi:**
 
@@ -186,7 +186,7 @@
 # ---
 
 # ## 6. I metodi speciali (dunder)
-
+# le funzioni dunder method sono speciali perché esistono anche se non li scriviamo, a livello logico lo sono perché stiamo sovrascrivendo dei metodi generici di tutte le classi  
 # **Concetto:** sono metodi con nome tra doppi underscore (`__nome__`), chiamati *dunder* da "double underscore". Python li richiama in automatico in certe situazioni.
 
 # | Metodo | Si attiva quando... | Cosa fa |

@@ -18,7 +18,6 @@
 # Secondo Mirko, senza le 3 regole fondamentali non c'è più OOP, e le 4 regole (astrazione compresa) funzionano **sempre tutte e 4 insieme**.
 
 # > **⚠️ Precisazioni:**
-# > - Nel titolo delle slide c'è scritto "EREDITARITÀ": la parola corretta è **ereditarietà**.
 # > - Come dice Mirko, in Python le 4 regole sono sempre "in gioco" almeno in parte: ogni classe eredita implicitamente dalla classe `object`. Il resto è un'affermazione didattica che non posso verificare nella documentazione.
 # >
 # > **[⚠️ LACUNA: nella prima lezione si parlava di "7 regole da imparare". Qui ne compaiono 4 (3 + astrazione). Le altre 3 non sono ancora comparse.]**
@@ -84,7 +83,8 @@
 
 # In Python un `if` **non crea uno spazio separato** per le variabili: ciò che crei dentro è visibile anche fuori. Lo spazio separato (*scope*) lo creano ad esempio le **funzioni** e le classi.
 
-# > **[⚠️ LACUNA: la frase "l'incapsulamento è la capacità di nascondere degli elementi o nel codice o dal codice" non è chiara ("nel codice o dal codice").]**
+# > **[⚠️ LACUNA: la frase "l'incapsulamento è la capacità di nascondere degli elementi o nel codice o dal codice"
+
 # >
 # > **[⚠️ LACUNA: non è chiaro come gli esempi con `if` si colleghino all'incapsulamento, perché in Python mostrano che la variabile *non* viene nascosta. La frase "ma se lo creo dichiarando prima una variabile fuori e poi una dentro" resta incompleta. Chiedi a Mirko cosa voleva dimostrare.]**
 # >
@@ -139,7 +139,7 @@
 
 # | Elemento | Tipo | Cosa fa |
 # |---|---|---|
-# | `super()` | metodo, secondo gli appunti | Richiama il metodo del padre dentro il figlio |
+# | `super()` | metodo | Richiama il metodo del padre dentro il figlio |
 # | **Ereditarietà multipla** | logica | Un figlio può avere più padri (padre1, padre2...) |
 # | **Sovrascrittura** (*overriding*) | strategia | Il figlio riscrive un metodo ricevuto dal padre |
 
@@ -226,7 +226,7 @@
 
 # **Concetto:**
 # - *Slide:* trattare oggetti di classi diverse attraverso un'interfaccia comune.
-# - *Mirko:* la capacità di un elemento di cambiare forma e/o comportamento senza cambiare ciò che rappresenta per il sistema.
+# - *Mirko:* la capacità di un elemento di cambiare forma e/o comportamento a un elemento senza cambiare ciò che rappresenta per il sistema.
 
 # ### Esempio dalle slide: `Cane` e `Gatto`
 
