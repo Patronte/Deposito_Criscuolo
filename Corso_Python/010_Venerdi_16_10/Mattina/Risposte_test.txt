@@ -1,0 +1,12 @@
+1)Criscuolo Matteo matteocriscuolo99@gmail.com
+
+
+2)Possiamo immaginare la classe come un tipo di dato, al suo interno è in grado di definire variabili, metodi come le funzioni e metodi speciali come il costruttore, il nome che utilizziamo per definire la classe sarà quindi il nome della classe, il nome del costruttore, ed il nome del tipo. un oggetto è un prodotto della classe, noi possiamo creare una classe, ma sarà la classe a creare un oggetto. Il self serve a indicare sé stesso (la classe) come elemento a cui far riferimento
+
+3) L'ereditarietà è la capacità di, a partire da una classe padre, ereditare nella classe figlia metodi e logiche, una classe figlio può avere più di una classe padre, quindi ereditare da più di una classe, e può sovrascrivere i metodi ereditati
+
+4)L'incapsulamento è la capacità di nascondere degli elementi dal codice o nel codice ne abbiamo una dimostrazione attraverso l'indentazione, l'incapsulamento può essere sia attivo che passivo, quello passivo non dipende da noi ma da come obbligatoriamente deve essere strutturato il codice
+
+
+
+5) è la capacità di un elemento di cambiare forma e o comportamento a un elemento senza però cambiare ciò che rappresenta per il sistema
