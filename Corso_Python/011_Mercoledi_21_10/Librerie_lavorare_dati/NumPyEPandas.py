@@ -7,7 +7,10 @@
 # la sua caratteristica principale è il BROADCASTING
 
 # BROADCASTING: la capacità di fare calcoli matematici su un'intera montagna di dati, all'istante, senza usare cicli for
-
+# PRINCIPI DEL BROADCASTING 
+# ALLINEAMENTO DELLE DIMENSIONI SI VERIFICA SE UNO DEI DUE ARRAY è 
+# ESPANSIONE DELLE DIMENSIONI
+# APPLICAZIONE DELL'OPERAZIONE
 # Perché usare gli Array di NumPy invece delle liste normali di Python?
 # 1. OMOGENEITÀ DEI DATI: Una lista normale può contenere tipi misti (es. [1, "ciao", True]). 
 #    Un Array di NumPy obbliga TUTTI gli elementi a essere dello stesso identico tipo 
@@ -52,6 +55,10 @@ print(matrice.shape)  # Output: (2, 3) -> Significa 2 righe e 3 colonne
 # Sintassi: tabella["Nome_Colonna"] --> Restituisce una Series.
 # Con Pandas puoi caricare un file esterno, (.csv, .xlsx) con una sola riga di codice
 
+
+#MANCANZA1 FUNZIONALITà CHIAVE DI PANDAS MANIPOLAZIONE DEI DATI, PULIZIA DEI DATI, ANALISI DEI DATI, INTEROPERABILITà presenti in slide 252
+#MANCANZA2 multi index presente a slide 260 a 263 e 280
+#MANCANZA3 Groupby slide 263 a 267 esercizi a 278
 # Comandi di Ispezione Rapida del DataFrame:
 # .info()     --> Mostra la struttura della tabella, i tipi di dati e se ci sono valori mancanti (Null).
 # .describe() --> Calcola automaticamente media, max, min e deviazione standard di TUTTE le colonne numeriche insieme.
@@ -87,3 +94,42 @@ print(media_attacco)  # Output: restituisce un singolo numero float
 # In Pandas per unire più filtri si usa l'operatore "&" (SIGNIFICA: E contemporaneamente) 
 # Ogni condizione deve OBBLIGATORIAMENTE stare dentro le parentesi tonde.
 # Esempio: tabella_campioni[(tabella_campioni["hp"] > 600) & (tabella_campioni["attackDamage"] > 50)]
+
+#MultiIndex è una capacità di Pandas ci permette di creare un indice con  + valori di indice tipo Paese+Anno
+#il comando per il multiindice è set index 
+#Pivot è una funzionalità avanzata di pandas che ci permette di modificare 
+
+#GROUPBY: è una tecnica presa da SQL serve a prendere un gruppo di dati ed applicare ad essi una funzione, serve ad aggregare i dati insieme
+
+#Primo step è sempre o creare o caricare, o usiamo dati sintetici, o dati reali 
+
+#definire il percorso) scegliere il metodo per caricare i dati) esplorazione
+#creare un file chiamato Esplorazione dove funzioni di analisi ripetibili 
+#come metodo info dati gli passo il DF valorizzato mi riporto DF.info
+
+#Esplorazione e pulizia
+#Visualizzazione delle statistiche descrittive
+print(df.describe())
+
+#rimozione dei valori mancanti
+df_clean= df.dropna()
+
+#Selezione e Filtraggio
+#Pandas fornisce metodi per selezionare specifiche colonne o righe da un DF 
+#Selezione di una colonna
+ages = df['età']
+#Filtraggio basato su una condizione
+adults = df[df['età'] >= 18]
+
+#MANIPOLAZIONE DEI DATI
+#include funzioni per modificare l'ordine dei dati, combinarli, con altri set di dati, o cambiare la loro struttura organizzativa
+#Ordinamento dei dati per età
+df_sorted = df.sort_values(by='età')
+#sort ordina i valori rispetto a una colonna, per farla al contrario :reverse
+#il merge unisce due dataframe in base ad una colonna in comune
+#Unione di due DataFrame
+merged_df = pd.merge(df, df_csv, on='nome')
+#il merged_df  sarà un df che è l'unione di df, df_csv con punto di unione(on) la Colonna 'nome'
+
+#Trasformazioni è l'operazione che trasforma un dato, lo cambia
+#la manipolazione crea un nuovo dato lasciando integro il dato iniziale

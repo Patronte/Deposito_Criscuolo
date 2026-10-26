@@ -1,0 +1,20 @@
+Allora vedo già che competitor name può essere la mia colonna su cui fare il join merge o quel che sarà
+per quanto riguarda il cosa voglio analizzare sto ancora finendo di vedere tutte le colonne
+ma penso che cercherò di fare un'analisi in merito alla percentuale di zucchero nel prodotto, ed il rapporto tra essa, e la quantità venduta/valutazione dei clienti, o entrambe, ma preferirei volare basso
+inizierò a fare un merge tra i due df on='Competitorname'
+
+Queste sono le mie due tab. l'unico dato comune è il competitor name 
+competitorname|chocolate|fruity|caramel|peanutyalmondy|nougat|crispedricewafer|hard|bar|pluribus|sugarpercent|pricepercent|winpercent
+competitorname|unita_vendute|giacenza_magazzino|prezzo_euro|costo_unitario_euro|budget_marketing_euro|valutazione_clienti|area_vendita
+
+cercando di capire qual è l'analisi più semplice che posso provare a fare, la soluzione più facile è che penso che farò un'analisi di quale parte tra nord centro e sud preferisce di più la cioccolata, basandomi unicamente sulla quantità venduta di ogni prodotto contenente cioccolata
+per fare ciò immagino che dovrò vedere per ogni zona, quanti prodotti sono stati venduti, sezionarli tra nord centro e sud, fare un sum per ognuno di essi, ed ottenendo il dato finale, vedere chi compra più cioccolata
+
+Qualcuno si è divertito ad inserire pure le isole nei dati, non dovrebbe cambiarmi nulla, è solo un 4 elemento tra i 3 di cui volevo comparare la preferenza, ma mi scassa il cervello sta cosa lol
+
+continuerò lo stesso su questa strada
+ESITO FINALE:
+
+Sono riuscito per ora a creare una tabella pivot che comprende (e in teoria ha funzionato) solo i competitor che hanno nel loro prodotto la cioccolata, il prossimo step che sarei andato a fare
+è quello di provare a sfruttare lo stesso metodo di chocolaten però utilizzando le zone, così da poter poi sommare  per ogni zona, le unità vendute a prescidere da competitorname
+l'idea è che avrei avuto come risultato, per ogni zona, il totale di unità vendute di prodotti al cioccolato, vedendo così quale zona compra più cioccolata

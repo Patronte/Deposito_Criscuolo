@@ -65,3 +65,7 @@ Segui tassativamente queste istruzioni per ogni blocco di appunti che ti invier�
 Se hai capito perfettamente il tuo ruolo, le istruzioni e come strutturare il lavoro, rispondi esclusivamente con: "OK, sono pronto. Incolla pure i tuoi primi appunti su Python." 
 Se invece hai bisogno di chiarimenti, dimmi quali dati ti mancano prima di iniziare.
 ----------------------------------------------------------------------------
+
+Cos'è il MACHINE LEARNING? un sottinsieme dell'IA che ha come obiettivo sviluppare sistemi in grado di apprendere autonomamente dai dati, le relazioni tra i dati
+a livello pratico trova i pattern ricorrenti e le relazioni tra i singoli dati 
+il principale limite: è la capacità di correlazione del risultato di addestramento
