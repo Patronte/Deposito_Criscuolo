@@ -1,0 +1,35 @@
+campione = riga della tabella , un singolo caso
+feature = variabile indipendente, colonna che descrive il campione 
+target = variabile dipendente, la colonna che vogliamo prevedere
+
+X (MAIUSCOLA) = tutte le feature: una tabella 2D di forma (n_campioni, n_feature).
+y(minuscola) = il target: un vettore 1D di lunghezza n_campioni 
+la riga i di X e l'elemento i di y si riferiscono allo stesso campione 
+
+tipi di addestramento:
+
+1--supervisionato--
+ è diviso in due tipi:
+
+-classificazione: un binario/boolean un si no se le classi sono 2, altrimenti è multiclasse 
+-regressione: valore che ha continuità, ( prezzo, temperatura, giorni di degenza) 
+
+2--non supervisionato--:
+
+
+
+-----------------------------
+
+Facile
+
+Obiettivo: classifica ciascun problema come classificazione, regressione, clustering o rinforzo: (a) prevedere il voto finale (0-30) di uno studente, (b) capire se una recensione è positiva o negativa, (c) raggruppare canzoni con sonorità simili senza generi predefiniti, (d) insegnare a un drone ad atterrare, (e) prevedere il numero di biciclette noleggiate in un'ora, (f) riconoscere la cifra scritta a mano in un'immagine.
+
+
+# (a) voto finale 0-30 -> REGRESSIONE (target numerico su scala ordinata)
+# (b) recensione positiva/negativa -> CLASSIFICAZIONE (2 categorie)
+# (c) raggruppare canzoni senza generi -> CLUSTERING (nessuna etichetta)
+# (d) far atterrare un drone -> RINFORZO (agente, ambiente, ricompense)
+# (e) biciclette noleggiate in un'ora -> REGRESSIONE (conteggio numerico)
+# (f) cifra scritta a mano -> CLASSIFICAZIONE (multiclasse, 10 classi)
+
+

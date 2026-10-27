@@ -69,11 +69,13 @@ std_value = np.std(arr)
 
 print('Somma: ',sum_value,'Media: ',mean_value,'Deviazionestd: ',std_value) """
 
-import numpy as np
+# import numpy as np
 
 
-arr = np.arange(6)
-print(arr)
-reshaped_arr = arr.reshape((2, 3))
-print(reshaped_arr)
-# Output: [[0 1 2] [3 4 5]]
+# arr = np.arange(6)
+# print(arr)
+# reshaped_arr = arr.reshape((2, 3))
+# print(reshaped_arr)
+# # Output: [[0 1 2] [3 4 5]]
+
+
